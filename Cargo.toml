@@ -1,0 +1,12 @@
+[package]
+name = "stelarator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libc = "0.2"
+rand = "0.8"
+bs58 = "0.5"
+
+[build-dependencies]
+cc = { version = "1.0", features = ["parallel"] }
