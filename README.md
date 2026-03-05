@@ -28,3 +28,10 @@ For example:
 ```
 cargo run --release -- IAM ANDY 1
 ```
+
+But you can know that have limits for the first prefix character after "G".
+For example, "GA", "GB", "GC", "GD" can found very fast. 
+But other characters after "G" can take a long time or cannot be found. 
+For suffix, you can use any characters.
+
+Use "?" to match any character.

@@ -39,11 +39,11 @@ fn main() {
     
     let mut config = Config::default();
     
-    let mut prefix = args[1].clone();
-    if !prefix.starts_with('G') {
+    let mut prefix = args[1].clone().to_uppercase();
+    if prefix.len() > 0 && !prefix.starts_with('G') {
         prefix.insert(0, 'G');
     }
-    let suffix = args[2].clone();
+    let suffix = args[2].clone().to_uppercase();
     let count = if args.len() > 3 {
         args[3].parse().unwrap_or(1)
     } else {
